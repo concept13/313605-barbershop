@@ -5,17 +5,14 @@
     <title>Каталог BARBERSHOP</title>
   </head>
   <body>
-    <!--???НЕ МОГУ ПОНЯТЬ: РАЗДЕЛ <header> НА ДАННОЙ СТРАНИЦЕ ПРИНАДЛЕЖИТ ЕЙ ИЛИ ЯВЛЯЕТСЯ ЭЛЕМЕНТОМ ГЛАВНОЙ СТРАНИЦЫ САЙТА???-->
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">barbershop</a>
-              <!--что использовать? специальный шрифт или готовую картинку?
-                <div class="index-logo">
-                  <img src="img/index-logo.png" width="0" height="0" alt="Барбершоп">
-                </div>-->
+              <a href="#">
+              <img src="http://placehold.it/210x70" alt="Barbershop">
+              </a>
             </li>
             <li>
               <a href="#">информация</a>
@@ -38,148 +35,139 @@
           <a class="login" href="#">вход</a>
         </div>
       </div>
-    </header>
-      <div class="index-content">
-        <div class="index-content-left">
-          <h1 class="index-content-title">средства для ухода</h1>
-            <div class="rout-navigation">
+    </header><!--ГОТОВО-->
+    <section class="main-catalog">
+      <div class="container">
+        <div class="filter-content-left">
+          <form class="filter-form" name="filter" action="https://echo.htmlacademy.ru" method="GET">
+            <div class="manufacturer">
+              <h2 class="manufacturer-title">производители:</h2>
               <ul>
                 <li>
-                  <a href="#">главная</a>
+                  <input type="checkbox" name="manufacturer" id="manufacturer-1">
+                  <label for="manufacturer-1">BAXTER OF CALIFORNIA</label>
                 </li>
                 <li>
-                  <a href="#">магазин</a>
+                  <input type="checkbox" name="manufacturer" id="manufacturer-2">
+                  <label for="manufacturer-2">MR NATTY</label>
                 </li>
                 <li>
-                  <a href="#">средства для ухода</a>
+                  <input type="checkbox" name="manufacturer" id="manufacturer-3">
+                  <label for="manufacturer-3">SUAVECITO</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="manufacturer" id="manufacturer-4">
+                  <label for="manufacturer-4">MALIN-GOETZ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="manufacturer" id="manufacturer-5">
+                  <label for="manufacturer-5">MURREY'S</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="manufacturer" id="manufacturer-6">
+                  <label for="manufacturer-6">AMERICAN CREW</label>
                 </li>
               </ul>
             </div>
-          </div>
-          <section class="selection">
-            <div class="manufacturer">
-              <h2 class="manufacturer-title">производители:</h2>
-                <ul>
-                  <li>BAXTER OF CALIFORNIA</li>
-                  <li>MR NATTY</li>
-                  <li>SUAVECITO</li>
-                  <li>MALIN-GOETZ</li>
-                  <li>MURREY'S</li>
-                  <li>AMERICAN CREW</li>
-                </ul>
+            <div class="product-group">
+            <h2 class="product-group-title">ГРУППЫ ТОВАРОВ:</h2>
+              <ul>
+                <li>
+                  <input type="radio" name="group" id="group-1">
+                  <label for="group-1">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
+                </li>
+                <li>
+                  <input type="radio" name="group" id="group-2" checked>
+                  <label for="group-2">СРЕДСТВА ДЛЯ УХОДА</label>
+                </li>
+                <li>
+                  <input type="radio" name="group" id="group-3">
+                  <label for="group-3">АКСЕССУАРЫ</label>
+                </li>
+              </ul>
             </div>
-            <div class="product group">
-              <h2 class="product group-title">группы товаров:</h2>
-                <ul>
-                <li>БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</li>
-                <li>СРЕДСТВА ДЛЯ УХОДА</li>
-                <li>АКСЕССУАРЫ</li>
-                </ul>
-                <a class="btn" href="#">показать</a>
-            </div>
-          </section>
-          </div>
-          <section class="product-right">
-            <div class="product-1">
-              <img src="http://placehold.it/150x100" alt="Набор для путешествий BAXTER OF CALIFORNIA">
-              <p class="product-1 title"><b>Набор для путешествий "BAXTER OF CALIFORNIA"</b></p>
-                <!--Возможно ли такое подключение скрипта из прайс-листа?
-                И нужно ли так усложнять.
-                <div class="price">
-                  <script src="script.js/price/...">
-                  </script>
-                </div>-->
-              <p>2 900 руб.</p>
-              <button type="submit">купить</button>
-            </div>
-            <div class="product-2">
-              <img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер BAXTER OF CALIFORNIA">
-              <p class="product-2 title"><b>Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</b></p>
-                <!--Возможно ли такое подключение скрипта из прайс-листа?
-                И нужно ли так усложнять.
-                <div class="price">
-                  <script src="script.js/price/...">
-                  </script>
-                </div>-->
-              <p>750 руб.</p>
-              <button type="submit">купить</button>
-            </div>
-            <div class="product-3">
-              <img src="http://placehold.it/150x100" alt="Гель для волос SUAVECITO ">
-              <p class="product-3 title"><b>Гель для волос "SUAVECITO"</b></p>
-                <!--Возможно ли такое подключение скрипта из прайс-листа?
-                И нужно ли так усложнять.
-                <div class="price">
-                  <script src="script.js/price/...">
-                  </script>
-                </div>-->
-              <p>290 руб.</p>
-              <button type="submit">купить</button>
-            </div>
-            <div class="product-4">
-              <img src="http://placehold.it/150x100" alt="Глина для укладки волос AMERICAN CREW">
-              <p class="product-3 title"><b>Глина для укладки волос AMERICAN CREW"</b></p>
-                <!--Возможно ли такое подключение скрипта из прайс-листа?
-                И нужно ли так усложнять.
-                <div class="price">
-                  <script src="script.js/price/...">
-                  </script>
-                </div>-->
-              <p>500 руб.</p>
-              <button type="submit">купить</button>
-            </div>
-            <div class="product-5">
-              <img src="http://placehold.it/150x100" alt="Гель для волос AMERICAN CREW">
-              <p class="product-3 title"><b>Гель для волос AMERICAN CREW"</b></p>
-                <!--Возможно ли такое подключение скрипта из прайс-листа?
-                И нужно ли так усложнять.
-                <div class="price">
-                  <script src="script.js/price/...">
-                  </script>
-                </div>-->
-              <p>300 руб.</p>
-              <button type="submit">купить</button>
-            </div>
-            <div class="product-6">
-            <img src="http://placehold.it/150x100" alt="Набор для бритья BAXTER OF CALIFORNIA">
-            <p class="product-1 title"><b>Набор для бритья "BAXTER OF CALIFORNIA"</b></p>
-                <!--Возможно ли такое подключение скрипта из прайс-листа?
-                И нужно ли так усложнять.
-                <div class="price">
-                  <script src="script.js/price/...">
-                  </script>
-                </div>-->
-            <p>3 900 руб.</p>
-            <button type="submit">купить</button>
-          </div>
-        </section>
-        <div class="pages-section-content">
-          <figure class="pages-section-content">
-          </figure>
-          <button class="btn pages-1" type="button">1</button>
-          <button class="btn pages-2" type="button">2</button>
-          <button class="btn pages-3" type="button">3</button>
-          <button class="btn pages-4" type="button">4</button>
+            <input type="submit" value="ПОКАЗАТЬ" style="margin-left: 30px;">
+          </form>
         </div>
-        <footer class="main-footer">
+      </div>
       <div class="container">
-        <section class="footer-contacts">
+        <div class="pages-product">
+          <ul>
+            <li>
+              <img src="http://placehold.it/150x100" alt="Набор для путешествий BAXTER OF CALIFORNIA">
+              <p class="product-title"><b>Набор для путешествий "BAXTER OF CALIFORNIA"</b></p>
+              <span>2 900 руб.</span>
+              <a href="#">Купить</a>
+            </li>
+            <li>
+              <img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер BAXTER OF CALIFORNIA">
+              <p class="product-title"><b>Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</b></p>
+              <span>750 руб.</span>
+              <a href="#">Купить</a>
+            </li>
+            <li>
+              <img src="http://placehold.it/150x100" alt="Гель для волос SUAVECITO">
+              <p class="product-title"><b>Гель для волос SUAVECITO</b></p>
+              <span>290 руб.</span>
+              <a href="#">Купить</a>
+            </li>
+            <li>
+              <img src="http://placehold.it/150x100" alt="Глина для укладки волос AMERICAN CREW">
+              <p class="product-title"><b>Глина для укладки волос AMERICAN CREW</b></p>
+              <span>500 руб.</span>
+              <a href="#">Купить</a>
+            </li>
+            <li>
+              <img src="http://placehold.it/150x100" alt="Гель для волос AMERICAN CREW">
+              <p class="product-title"><b>Гель для волос AMERICAN CREW"</b></p>
+              <span>300 руб.</span>
+              <a href="#">Купить</a>
+            </li>
+            <li>
+              <img src="http://placehold.it/150x100" alt="Набор для бритья BAXTER OF CALIFORNIA">
+              <p class="product-title"><b>Набор для бритья BAXTER OF CALIFORNIA</b></p>
+              <span>3 900 руб.</span>
+              <a href="#">Купить</a>
+            </li>
+          </ul>
+        </div>
+        <div class="pages-product-content">
+          <ul>
+            <li><a href="#"></a>
+              <button class="btn pages-1" type="button" name="pages-1">1</button>
+            </li>
+            <li><a href="#"></a>
+              <button class="btn pages-2" type="button" name="pages-2">2</button>
+            </li>
+            <li><a href="#"></a>
+              <button class="btn pages-3" type="button" name="pages-3">3</button>
+            </li>
+            <li><a href="#"></a>
+              <button class="btn pages-4" type="button" name="pages-4">4</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+      <footer class="main-footer">
+        <div class="container">
+          <section class="footer-contacts">
             Барбершоп «Бородинский»<br>
             Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
             <a href="#">Как нас найти?</a><br>
             Телефон: +7 (812) 666-02-66
-        </section>
-        <section class="footer-social">
-          <p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-        </section>
-        <section class="footer-copyright">
-          <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
-      </div>
-    </footer>
-  </body>
-</html>
+          </section>
+          <section class="footer-social">
+            <p>Давайте дружить!</p>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+          </section>
+          <section class="footer-copyright">
+            <p>Разработано:</p>
+            <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          </section>
+        </div>
+      </footer>
+    </body>
+  </html>
